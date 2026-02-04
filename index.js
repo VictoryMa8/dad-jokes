@@ -24,7 +24,7 @@ app.post('/', async (req, res) => {
   })
 
   const data = await response.json()
-  console.log(data)
+  console.log(data.joke)
   res.send(`${data.joke}
     <form method="POST" action="/">
       <button>Another one!</button>
