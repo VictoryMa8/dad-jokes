@@ -26,9 +26,10 @@ app.post('/', async (req, res) => {
   const data = await response.json()
   console.log(data.joke)
   res.send(`${data.joke}
-    <form method="POST" action="/">
-      <button>Another one!</button>
-    </form>`)
+      <form method="POST" action="/">
+        <button>Another one!</button>
+      </form>
+    `)
 })
 
 app.listen(port, () => {
